@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    transition: .2s;
 }
 
 @font-face {
@@ -27,6 +28,8 @@ body {
 
     width: 100vw;
     height: 100vh;
+    
+    transition: none;
 }
 #backimage img {
     min-width: 100%;
@@ -84,4 +87,32 @@ body {
 .card a:hover {
     color: aqua;
     background-color: #222;
+}
+
+
+@media only screen and (max-width: 870px) {
+    body {
+        font-size: 14px;
+    }
+    #title {
+        font-size: 4em;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    body {
+        font-size: 12px;
+    }
+    #title {
+        font-size: 3em;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    body {
+        font-size: 11px;
+    }
+    #title {
+        font-size: 2em;
+    }
 }
