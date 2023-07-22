@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Lexend Peta";
+    src: url("/static/LexendPeta-Regular.ttf");
+}
+
+body {
+    z-index: 0;
+    
+    font-size: 18px;
+    font-family: "Lexend Peta";
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#backimage {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+
+    width: 100vw;
+    height: 100vh;
+}
+#backimage img {
+    min-width: 100%;
+    min-width: 100%;
+}
+
+#view {
+    position: relative;
+    width: 100%;
+    min-height: 99vh;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#titlecard {
+    padding: 2em;
+    margin: 3em;
+}
+#title {
+    font-size: 5rem;
+}
+#description {
+    font-size: 1.3em;
+    color: #fff5;
+    width: 100%;
+    text-align: center;
+}
+#description span {
+    color: #fff7;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.card a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    margin: .5em;
+    padding: .5em 1em;
+    width: 100%;
+    color: #44ffff66;
+    background-color: #ffffff02;
+    border-radius: 1em;
+    text-decoration: none;
+}
+.card a:hover {
+    color: aqua;
+    background-color: #222;
+}
